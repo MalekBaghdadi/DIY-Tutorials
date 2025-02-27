@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-light" aria-label="Eleventh navbar example">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="img/DIY.png" class="img-fluid" style="width: 100px; height: auto;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09"
@@ -26,18 +26,18 @@
             <div class="collapse navbar-collapse" id="navbarsExample09">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item px-3">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link" href="tutorials.html">Tutorials</a>
+                        <a class="nav-link" href="#tutorial-album">Tutorials</a>
                     </li>
                     <li class="nav-item dropdown px-3">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
                             aria-expanded="false">Catergories</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Beginner</a></li>
-                            <li><a class="dropdown-item" href="#">Intermediate</a></li>
-                            <li><a class="dropdown-item" href="#">Advanced</a></li>
+                            <li><a class="dropdown-item" href="paper_dragon.html">Beginner</a></li>
+                            <li><a class="dropdown-item" href="pancakes.html">Intermediate</a></li>
+                            <li><a class="dropdown-item" href="wooden_bench_tutorial.html">Advanced</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -72,7 +72,7 @@
                     <div class="carousel-caption text-start">
                         <h1>Wooden Bench</h1>
                         <p class="opacity-75">DIY your own wooden bench at home!</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Start the tutorial</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="wooden_bench_tutorial.html">Start the tutorial</a></p>
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@
                     <div class="carousel-caption">
                         <h1>Dragon Oragami</h1>
                         <p>Elivate you oragami skills by learning how to make a Dragon with paper!</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Start the tutorial</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="paper_dragon.html">Start the tutorial</a></p>
                     </div>
                 </div>
             </div>
@@ -94,7 +94,7 @@
                     <div class="carousel-caption text-end">
                         <h1>Heavenly Pancakes</h1>
                         <p>Perfect you pancakes with this easy to follow pancake tutorial!</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Start the Tutorial</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="pancakes.html">Start the Tutorial</a></p>
                     </div>
                 </div>
             </div>
@@ -110,7 +110,6 @@
         </button>
     </div>
 
-    <!--Features-->
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 px-5">
         <div class="feature col">
             <div
@@ -143,25 +142,9 @@
 
     <h2 class="Explore">Explore Tutorials</h2>
 
-    <div class="album py-5">
+    <div id="tutorial-album" class="album py-5">
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="img/home/slide1.jpg" class="card-img-top" alt="Tutorial Image 1">
-                        <div class="card-body">
-                            <p class="card-text">Wooden Bench</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Go To
-                                        Tutorial</button>
-                                    <button type="button" class="btn btn-sm btn-outline-danger">Advanced</button>
-                                </div>
-                                <small class="text-body-secondary"></small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="col">
                     <div class="card shadow-sm">
                         <img src="img/home/slide2.jpg" class="card-img-top" alt="Tutorial Image 2">
@@ -169,15 +152,15 @@
                             <p class="card-text">Paper Dragon</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Go To
-                                        Tutorial</button>
+                                    <a type="button" class="btn btn-sm btn-outline-secondary" href="paper_dragon.html">Start</a>
                                     <button type="button" class="btn btn-sm btn-outline-warning">Intermediate</button>
                                 </div>
-                                <small class="text-body-secondary">4 hours</small>
+                                <small class="text-body-secondary">15 minutes</small>
                             </div>
                         </div>
                     </div>
                 </div>
+                
                 <div class="col">
                     <div class="card shadow-sm">
                         <img src="img/home/slide3.jpg" class="card-img-top" alt="Tutorial Image 3">
@@ -185,10 +168,26 @@
                             <p class="card-text">Easy & Delicous Pancakes</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Start</button>
+                                    <a type="button" class="btn btn-sm btn-outline-secondary" href="pancakes.html">Start</a>
                                     <button type="button" class="btn btn-sm btn-outline-success">Beginner</button>
                                 </div>
-                                <small class="text-body-secondary">9 دقائق</small>
+                                <small class="text-body-secondary">40 minutes</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="img/home/slide1.jpg" class="card-img-top" alt="Tutorial Image 1">
+                        <div class="card-body">
+                            <p class="card-text">Wooden Bench</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a type="button" class="btn btn-sm btn-outline-secondary" href="wooden_bench_tutorial.html">Start</a>
+                                    <button type="button" class="btn btn-sm btn-outline-danger">Advanced</button>
+                                </div>
+                                <small class="text-body-secondary">4 hours</small>
                             </div>
                         </div>
                     </div>
@@ -224,6 +223,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
