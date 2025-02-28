@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Make a Paper Dragon</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIY Paper Dragon</title>
     <link href="styles.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg bg-light" aria-label="Eleventh navbar example">
         <div class="container-fluid">
@@ -52,18 +56,39 @@
         </div>
     </nav>
 
-    <div class="container my-5">
-        <h1 class="text-center">How to Make a Paper Dragon</h1>
-        <p class="text-center">Follow this interactive step-by-step guide to fold your own origami dragon.</p>
+    <div class="container my-5 paper-dragon-container">
+        <h1 class="paper-dragon-title text-center">How to Make a Paper Dragon</h1>
+        <p class="text-center paper-dragon-description">Follow this interactive step-by-step guide to fold your own origami dragon.</p>
+        
         <div class="text-center">
-            <img src="img/dragon.jpg" alt="Origami Dragon" class="img-fluid">
+            <label for="dragonColor" class="form-label">Choose Your Dragon Color:</label>
+            <select id="dragonColor" class="form-select paper-dragon-color-select">
+                <option value="red">Red</option>
+                <option value="white">White</option>
+                <option value="green">Green</option>
+            </select>
         </div>
 
-        <h2>Interactive Step-by-Step Instructions</h2>
-        <div class="step-container mt-4">
-            <div id="stepDisplay" class="text-center p-3 border rounded bg-light">Click "Next Step" to Start!</div>
-            <button id="prevStep" class="btn btn-outline-secondary mt-3" disabled>Previous</button>
-            <button id="nextStep" class="btn btn-primary mt-3">Next Step</button>
+        <div class="text-center mt-3">
+            <img id="dragonImage" src="img/dragon_red.jpg" alt="Origami Dragon" class="img-fluid paper-dragon-main-img rounded">
+        </div>
+
+        <h2 class="paper-dragon-steps-title">Interactive Step-by-Step Instructions</h2>
+        <div class="paper-dragon-steps-container mt-4">
+            <div id="stepDisplay" class="text-center p-3 border rounded bg-light paper-dragon-step-display">
+                Click "Next Step" to Start!
+            </div>
+            <button id="prevStep" class="btn btn-outline-secondary mt-3 paper-dragon-prev-btn" disabled>Previous</button>
+            <button id="nextStep" class="btn btn-danger mt-3 paper-dragon-next-btn">Next Step</button>
+        </div>
+
+        <div class="text-center paper-dragon-video-container">
+            <h3>Watch the Full Tutorial</h3>
+            <iframe width="1050" height="615" src="https://www.youtube.com/embed/qFgE0zF1t28"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
         </div>
     </div>
 
@@ -77,22 +102,19 @@
 
         <ul class="nav col-md-4 justify-content-end">
             <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+                <a href="https://github.com/MalekBaghdadi" class="nav-link px-2 text-body-secondary">Github</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-body-secondary">Github</a>
+                <a href="mailto:malek.baghdade@gmail.com" class="nav-link px-2 text-body-secondary">Email</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-body-secondary">Email</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-body-secondary">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/malek-baghdadi-17581328a/" class="nav-link px-2 text-body-secondary">LinkedIn</a>
             </li>
         </ul>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>

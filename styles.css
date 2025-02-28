@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .Explore {
     margin-left: auto;
     margin-right: auto;
@@ -117,36 +121,57 @@
     max-width: 800px;
     margin: auto;
     padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.paper-dragon-header {
-    text-align: center;
-    color: #d9534f;
+.paper-dragon-title {
+    color: #ff0000;
     font-weight: bold;
+}
+
+.paper-dragon-description {
+    font-style: italic;
+    color: #757575;
+}
+
+.paper-dragon-main-img {
+    border-radius: 15px;
     margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
 }
 
-.paper-dragon-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 15px auto;
-    border-radius: 8px;
+.paper-dragon-steps-container {
+    text-align: center;
 }
 
-.step-title {
-    font-size: 1.3em;
+.paper-dragon-step-display {
+    background-color: #fff3cd;
+    color: #d30000e8;
     font-weight: bold;
-    color: #337ab7;
-    margin-top: 15px;
 }
 
-.instructions-list {
-    list-style-type: decimal;
-    padding-left: 20px;
+.paper-dragon-prev-btn,
+.paper-dragon-next-btn {
+    margin: 10px;
 }
+
+.paper-dragon-color-select {
+    width: 200px;
+    margin: auto;
+}
+
+.paper-dragon-video-container {
+    margin-top: 40px;
+}
+
+.paper-dragon-footer {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.paper-dragon-footer-logo {
+    width: 120px;
+}
+
 
 
