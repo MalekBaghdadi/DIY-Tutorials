@@ -187,5 +187,32 @@ html {
     border-radius: 10px; 
 }
 
+@media (max-width: 768px) {
+    .carousel-caption {
+        height: 100%;
+        position: absolute;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 5vw;
+        margin: 16px 0 0 0;
+    }
+
+    .carousel-caption p {
+        font-size: 3.5vw;
+        margin: 0;
+    }
+
+    .carousel-caption .btn {
+        font-size: 3vw;
+        padding: 5px 10px;
+        margin-top: 6px;
+    }
+}
+
+
+
 
 
