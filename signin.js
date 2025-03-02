@@ -1,18 +1,18 @@
-$(document).ready(function () {
-    $(".form-signin form").submit(function (event) {
-        event.preventDefault();
-        let isValid = true;
+$(document).ready(function () {  // On page load
+    $(".form-signin form").submit(function (event) {  // On form submit
+        event.preventDefault();  // Prevent default action
+        let isValid = true;  
 
-        $("input[type='email'], input[type='password']").each(function () {
-            if (!$(this).val().trim()) {
+        $("input[type='email'], input[type='password']").each(function () {  // Check inputs
+            if (!$(this).val().trim()) {  // If empty
                 isValid = false;
-                $(this).addClass("is-invalid");
+                $(this).addClass("is-invalid");  // Mark invalid
             } else {
-                $(this).removeClass("is-invalid");
+                $(this).removeClass("is-invalid");  // Remove error
             }
         });
 
-        if (isValid) {
+        if (isValid) {  // If valid, redirect
             window.location.href = "index.html";
         }
     });
